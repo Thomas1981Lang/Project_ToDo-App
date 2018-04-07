@@ -1,0 +1,153 @@
+/***************************
+********* Basic ************
+***************************/
+
+* {
+    font-size: 18px;
+    text-align: center;
+}
+
+body {
+    min-height: 101vh;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: aliceblue;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+
+/***************************
+**** HEADER - SECTION  *****
+***************************/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.logo {
+    padding: 12px 20px;
+}
+
+.rahmen {
+    padding: 5px 5px 10px 5px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.425);
+    text-shadow: 0 0 2px gray;
+    background-color: white;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    min-width: 420px;
+    padding: 30px 20px;
+}
+
+
+@media only screen and (max-width: 1270px) {
+    .rahmen h2 {
+        font-size: 1.2rem;
+    }
+    .rahmen h3 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .title {
+        min-width: 290px;
+    }
+    .title h1 {
+        font-size: 2rem;
+    }
+    .title h2 {
+        font-size: 1rem;
+    }
+    .buchstaben {
+        width: 3.2rem;
+    }
+    .rechner {
+        padding-left: 10px
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .rahmen h2 {
+        font-size: 0.8rem;
+    }
+    .rahmen h3 {
+        font-size: 0.8rem;
+    }
+    .title {
+        min-width: 180px;
+    }
+    .title h1 {
+        font-size: 1.5rem;
+    }
+    .title h2 {
+        font-size: 0.8rem;
+    }
+    .buchstaben {
+        /* padding: 0 5px; */
+        width: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .zeichen {
+        display: none;
+    }
+    .rechner {
+        display: none;
+    }
+    .title {
+        min-width: 80px;
+    }
+    .title h1 {
+        font-size: 1.5rem;
+    }
+    .title h2 {
+        font-size: 0.8rem;
+    }
+    .buchstaben {
+        /* padding: 0 5px; */
+        width: 2.2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/***************************
+***** FOOTER - SECTION *****
+***************************/
+
+footer {
+    position: fixed;
+    position: sticky;
+    top: 100%;
+    background-color: antiquewhite;
+    padding: 30px;
+    text-align: left;
+}
